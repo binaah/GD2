@@ -1,0 +1,66 @@
+img {
+    max-width: 100%;
+}
+
+/*comments look like this*/
+h1 {
+    color: hsl(22, 100%, 62%);
+    font-family: Avenir;
+    font-size: 60px;
+    font-style: inherit;
+}
+
+
+
+h2 {
+    color: cadetblue;
+    font-family: Avenir;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.question-block {
+    color: mediumturquoise;
+    font-family: Avenir;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 450;
+
+}
+
+figure {
+    color: cadetblue;
+    font-family: Avenir;
+    font-size-adjust: initial;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+p {
+    color: gray;
+    font-size: 30px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 450;
+}
+
+a {
+    color: mediumaquamarine;
+    font-family: Avenir;
+    font-style: italic;
+    font-weight: 600;
+}
+
+blockquote {
+    color: mediumturquoise;
+    font-family: Avenir;
+    font-style: italic;
+    font-size: 30px;
+    font: weight 450;
+    background-color: hsl(300, 74%, 39%);
+    border: 12px solid hsl(12, 100%, 51%);
+    border-radius: 3px;
+    padding: 30px;
+}
