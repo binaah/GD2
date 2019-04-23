@@ -1,0 +1,152 @@
+figure {
+    position: relative;
+
+
+}
+
+figure img {
+    transition: all 1s;
+    width: 200px;
+    height: auto;
+    margin: 0%;
+}
+
+figure img:hover {
+    transform: scale(1.3);
+}
+
+figcaption {
+    display: none;
+    text-align: left;
+    font-family: 'Heebo', sans-serif;
+    position: relative;
+    width: 50%;
+
+}
+
+h1 {
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-display: fallback;
+}
+
+h2 {
+    font-family: 'Mukta Mahee', sans-serif;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+#hour1:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour2:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour3:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour4:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+#hour5:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour6:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour7:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour8:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour9:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour10:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour11:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour12:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour13:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+#hour14:target figcaption {
+    display: block;
+    color: rgb(255, 255, 255)
+}
+
+@media (min-width: 375px) {
+    body {
+        background-color: rgb(71, 3, 3);
+    }
+
+    figure {
+        float: left;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        min-height: 470px;
+    }
+
+    figure img {
+        border: 15px solid rgb(238, 250, 130)
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        background-color: black;
+    }
+
+    figure {
+        -webkit-column-count: auto;
+        -moz-column-count: auto;
+        column-count: auto;
+    }
+
+    figure img {
+        border: 15px solid rgb(130, 250, 250)
+    }
+
+    figcaption {
+        text-align: left;
+        font-size: 20px;
+        position: relative;
+        padding: 10px;
+    }
+}
+}
