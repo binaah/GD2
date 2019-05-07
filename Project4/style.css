@@ -1,7 +1,131 @@
 body {
     background-color: black;
     color: white;
+    font-family: 'Gugi', cursive;
+    color: #404040;
 }
+
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.register-input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    margin-top: 2px;
+    font-weight: 500;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.register-input:focus {
+    border-color: #1e9ce6;
+    outline: 0;
+}
+
+.register-button {
+    display: block;
+    width: 100%;
+    height: 42px;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #494d59;
+    text-align: center;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    background: #fcfcfc;
+    border: 1px solid;
+    border-color: #d8d8d8 #d1d1d1 #c3c3c3;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -1px rgba(0, 0, 0, 0.03), 0 1px rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.03), 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.register-button:active {
+    background-image: -webkit-linear-gradient(top, #eeeeee, #fcfcfc);
+    background-image: -moz-linear-gradient(top, #eeeeee, #fcfcfc);
+    background-image: -o-linear-gradient(top, #eeeeee, #fcfcfc);
+    background-image: linear-gradient(to bottom, #eeeeee, #fcfcfc);
+    -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.03);
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.03);
+}
+
+.register-button:focus {
+    outline: 0;
+}
+
+.register-switch {
+    height: 32px;
+    margin-bottom: 15px;
+    padding: 4px;
+    background: #6db244;
+    border-radius: 2px;
+    background-image: -webkit-linear-gradient(top, #60a83a, #7dbe52);
+    background-image: -moz-linear-gradient(top, #60a83a, #7dbe52);
+    background-image: -o-linear-gradient(top, #60a83a, #7dbe52);
+    background-image: linear-gradient(to bottom, #60a83a, #7dbe52);
+    -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.register-switch-input {
+    display: none;
+}
+
+.register-switch-label {
+    float: left;
+    width: 50%;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.register-switch-input:checked+.register-switch-label {
+    font-weight: 500;
+    color: #434248;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+:-moz-placeholder {
+    color: #aaa;
+    font-weight: 300;
+}
+
+::-moz-placeholder {
+    color: #aaa;
+    font-weight: 300;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    color: #aaa;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder {
+    color: #aaa;
+    font-weight: 300;
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
 
 h1 {
     font-family: 'Orbitron', sans-serif;
@@ -12,6 +136,7 @@ h1 {
 h3 {
     font-family: 'Gugi', cursive;
     font-size: 50px;
+    color: #f0ebeb;
 }
 
 h4 {
@@ -22,7 +147,7 @@ p {
     font-family: 'Khand',
         sans-serif;
     font-size: 20px;
-    color: #b8b8b8;
+    color: #cccccc;
 
 }
 
@@ -30,27 +155,12 @@ p {
     align-items: center;
 }
 
-@media (min-width: 1280px) {
-    .speaker-details {
-        display: inline-block;
-        vertical-align: top;
-        width: 30%;
-
-
-
-    }
-
-}
-
 @media (min-width: 375px) {
     .mt medium diagonal {
         align-items: center;
     }
 
-
-
 }
-
 
 .overlay-item {
     display: block;
@@ -86,10 +196,12 @@ p {
     display: block;
     background-color: transparent;
     color: #fff;
+    font-size: 17px;
 }
 
 .overlay-item p {
     text-align: left;
+    font-size: 13px;
 }
 
 .overlay-item a.btn {
@@ -199,6 +311,28 @@ p {
     opacity: 1;
 }
 
+@media (min-width: 900px) {
+
+    .overlay-item h3,
+    .overlay-item p {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .speaker-details {
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+    }
+
+    .overlay-item h3,
+    .overlay-item p {
+        font-size: 50px;
+
+    }
+}
+
 .demo {
     text-align: center;
     margin-top: 150px;
@@ -217,13 +351,17 @@ p {
 
 
 .diagonal {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     position: relative;
     line-height: 50px;
     background: #67809F;
     color: white;
     border: none;
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans',
+        sans-serif;
     overflow: hidden;
     z-index: 1;
     padding: 0px;
@@ -240,7 +378,7 @@ p {
     z-index: -1;
     transform-origin: 0% 0%;
     transform: translateX(calc(20% - 25px)) translateY(10%) rotate(-45deg);
-    /transform: translateY(10%) translateX(16%) rotate(-45deg);
+    transform: translateY(10%) translateX(16%) rotate(-45deg);
     transition: transform .3s;
 }
 
@@ -354,6 +492,7 @@ header {
 h1 {
     text-align: center;
     margin-bottom: 0;
+    color: white;
 }
 
 h4 {
